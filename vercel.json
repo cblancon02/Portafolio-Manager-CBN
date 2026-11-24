@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "outputDirectory": "web",
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 60,
+      "includeFiles": "{server,web}/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/((?!index$).*)",
+      "destination": "/api/index?__pm_path=$1"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/weekly",
+      "schedule": "0 14 * * 0"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "portafolio-manager",
+  "private": true,
+  "version": "4.0.0",
+  "description": "Portafolio Manager v4.0 \u2014 Vision ADR, Thesis Tracker, Pre-Buy Stress-Test & Portfolio AI Copilot",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch server/server.mjs",
+    "start": "node server/server.mjs"
+  },
+  "license": "UNLICENSED"
+}
